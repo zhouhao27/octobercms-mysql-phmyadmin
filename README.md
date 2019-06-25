@@ -29,6 +29,8 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 http://localhost:port/install.php
 ```
 
+[Installation guide](https://octobercms.com/docs/setup/installation#wizard-installation)
+
 ## Configuration
 
 This package comes with default configuration options. You can modify them by creating `.env` file in your root directory.
@@ -79,8 +81,12 @@ By default following modules are enabled.
 
 You can connect to web server using `docker exec` command to perform various operation on it. Use below command to login to container via ssh.
 
-```shell
-docker exec -it 7.2.x-webserver /bin/bash
+```bash shell
+docker exec -it webserver /bin/bash
+```
+
+```fish shell
+docker exec -it webserver fish
 ```
 
 ## PHP
