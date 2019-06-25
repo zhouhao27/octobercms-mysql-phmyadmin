@@ -1,6 +1,4 @@
-.env
 /.vscode
-/config/*
 /data/*
 /logs/*
 /www/install_files/install.log

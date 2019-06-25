@@ -1,5 +1,5 @@
 #!/bin/bash
-export $(grep -v '^#' .env | xargs -0)
+export $(grep -v '^#' ./config/env | xargs -0)
 
 if [ $1 == "stop" ]; then
   echo 'stopping...'
