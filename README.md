@@ -123,3 +123,5 @@ Inherit from **webserver** and extra installation:
 
 By changing bin/webserver/Dockerfile
 
+Optimize to reduce the container size.
+

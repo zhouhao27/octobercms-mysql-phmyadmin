@@ -3,4 +3,5 @@
 /config/*
 /data/*
 /logs/*
+/www/install_files/install.log
 .DS_Store
