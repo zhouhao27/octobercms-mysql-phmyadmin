@@ -1,5 +1,5 @@
 /.vscode
 /data/*
 /logs/*
-/www/install_files/install.log
+/www/*
 .DS_Store
