@@ -1,6 +1,4 @@
-# Reference
-
-[LAMP stack built with Docker Compose](https://github.com/sprintcube/docker-compose-lamp)
+# LAMP Docker ready for OctoberCMS installation
 
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
@@ -8,6 +6,13 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 * Apache 2.4
 * MySQL 5.7
 * phpMyAdmin
+* OctoberCMS Installer in www folder
+* Fish shell
+* Vim editor and a few plugins
+  
+## Reference
+
+[LAMP stack built with Docker Compose](https://github.com/sprintcube/docker-compose-lamp)
 
 ## Installation
 
@@ -30,6 +35,10 @@ http://localhost:port/install.php
 ```
 
 [Installation guide](https://octobercms.com/docs/setup/installation#wizard-installation)
+
+> NOTE: 
+> 1. The database host is the container name for mysql: **5.7-mysql** instead of **localhost**
+> 2. Remove the installer after installation
 
 ## Configuration
 
