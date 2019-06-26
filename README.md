@@ -91,11 +91,11 @@ By default following modules are enabled.
 You can connect to web server using `docker exec` command to perform various operation on it. Use below command to login to container via ssh.
 
 ```bash shell
-docker exec -it webserver /bin/bash
+docker exec -it 7.2.x-webserver /bin/bash
 ```
 
 ```fish shell
-docker exec -it webserver fish
+docker exec -it 7.2.x-webserver fish
 ```
 
 ## PHP
@@ -130,13 +130,6 @@ username: root
 password: tiger
 
 ## TODO:
-
-Inherit from **webserver** and extra installation:
-
-  - fish
-  - vim
-
-By changing bin/webserver/Dockerfile
 
 Optimize to reduce the container size.
 
