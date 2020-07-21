@@ -7,7 +7,7 @@ RUN apt-get -y update --fix-missing && \
     apt-utils nano wget dialog \
     fish vim \
     # Install important libraries
-    build-essential git curl libcurl3 libcurl3-dev zip openssl
+    build-essential git curl libcurl4 libcurl4-gnutls-dev zip openssl
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
@@ -16,7 +16,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
   docker-php-ext-enable xdebug
 
 # Other PHP7 Extensions
-RUN apt-get -y install libsqlite3-dev libsqlite3-0 mysql-client zlib1g-dev && \
+RUN apt-get -y install libsqlite3-dev libsqlite3-0 default-mysql-client zlib1g-dev && \
   docker-php-ext-install pdo_mysql \
     pdo_sqlite \
     mysqli \
